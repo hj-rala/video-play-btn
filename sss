@@ -1,0 +1,9 @@
+function videoPlay() {
+  $(".btvAd_video_btn").each(function () {
+    $(this).on("click", function () {
+      var videoCon = $("video");
+      $(this).siblings(videoCon).trigger("play");
+      $(this).css("display", "none");
+    });
+  });
+}
